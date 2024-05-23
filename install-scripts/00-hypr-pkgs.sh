@@ -22,7 +22,8 @@ hypridle
 hyprlock
 imagemagick 
 jq
-kitty
+#kitty
+xfce4-terminal
 kvantum
 nano  
 network-manager-applet 
