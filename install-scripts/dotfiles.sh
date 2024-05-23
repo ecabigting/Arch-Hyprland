@@ -19,7 +19,7 @@ if [ -f Hyprland-Dots.tar.gz ]; then
   existing_version=$(echo Hyprland-Dots.tar.gz | grep -oP 'v\d+\.\d+\.\d+' | sed 's/v//')
 
   # Fetch the tag_name for the latest release using the GitHub API
-  latest_version=$(curl -s https://api.github.com/repos/JaKooLit/Hyprland-Dots/releases/latest | grep "tag_name" | cut -d '"' -f 4 | sed 's/v//')
+  latest_version=$(curl -s https://api.github.com/repos/ecabigting/Hyprland-Dots/releases/latest | grep "tag_name" | cut -d '"' -f 4 | sed 's/v//')
 
   # Check if versions match
   if [ "$existing_version" = "$latest_version" ]; then
